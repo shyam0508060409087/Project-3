@@ -1,0 +1,23 @@
+import java.util.*;
+class Student {
+    private String name;
+    private int roll;
+
+    Student(String name, int roll) {
+        this.name = name;
+        this.roll = roll;
+    }
+
+    public String getDetails() {
+        return "Roll No: " + roll + ", Name: " + name;
+    }
+}
+
+public class StudentManager {
+    public static void main(String[] args) {
+        Student s1 = new Student("Ravi", 101);
+        Student s2 = new Student("Anu", 102);
+        System.out.println(s1.getDetails());
+        System.out.println(s2.getDetails());
+    }
+}
