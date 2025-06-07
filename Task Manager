@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class TaskManager {
+    public static void main(String[] args) {
+        ArrayList<String> tasks = new ArrayList<>();
+        tasks.add("Finish assignment");
+        tasks.add("Revise OOP concepts");
+        tasks.add("Push to GitHub");
+
+        System.out.println("Your Tasks:");
+        for (String task : tasks) {
+            System.out.println("- " + task);
+        }
+
+        tasks.remove(1);
+        System.out.println("After removing 2nd task:");
+        System.out.println(tasks);
+    }
+}
